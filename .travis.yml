@@ -9,4 +9,14 @@ install:
 script:
   - python -m unittest discover  # Replace with the command to run your tests or application
 
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "$AccessId"
+  secret_access_key:
+    secure: "$AccessSecretKey"
+  region: "us-west-2"
+  app: "assignment1_django"
+  env: "django-project"
+  bucket_name: "the-target-S3-bucket"
 # You can add additional steps such as deployment configuration if needed.
