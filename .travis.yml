@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.11"  # Update to the actual Python 3.11 version when available
+  - "3.8"  # Update to the actual Python 3.11 version when available
 
 # Define your build steps, for example:
 install:
