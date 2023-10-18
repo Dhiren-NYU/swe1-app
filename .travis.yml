@@ -16,7 +16,7 @@ script:
   - python manage.py test
   - python -m black . --check
   - python -m flake8 --ignore=E303,E501 --max-line-length=88
-  - python -m coverage run --source = assignment1,polls manage.py test
+  - python -m coverage run manage.py test
 env:
   global:
     - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
